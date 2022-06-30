@@ -1,0 +1,96 @@
+{
+  "name": "Aia/Aix Store Listview",
+  "metadata-version": 1,
+  "author": "Maayur (written by WaterMelonIce)",
+  "platforms": ["Kodular"],
+  "keys": [
+    "count",
+    "icon",
+    "title",
+    "updated",
+    "platform",
+    "developer",
+    "downloads",
+    "buttonName"
+  ],
+  "components": [
+    {
+      "id": "{count}",
+      "type": "MakeroidCardView",
+      "properties": {
+        "AlignVertical": 1,
+        "AlignHorizontal": 1,
+        "Height": -1,
+        "Width": -2,
+        "CornerRadius": 10,
+        "BackgroundColor": -1,
+        "FullClickable": false
+      },
+      "components": [
+        {
+          "id": "Horizontal_{count}",
+          "type": "HorizontalArrangement",
+          "properties": { "AlignHorizontal": 3, "Width": -2, "Height": -1 },
+          "components": [
+            {
+              "id": "Image_{count}",
+              "type": "Image",
+              "properties": { "Height": 30, "Width": 30, "Picture": "{icon}" }
+            },
+            {
+              "id": "Space_{count}",
+              "type": "SpaceView",
+              "properties": { "Width": 20 }
+            },
+            {
+              "id": "titleLabel_{count}",
+              "type": "Label",
+              "properties": {
+                "FontTypefaceImport": "Product_Sans_Bold.ttf",
+                "Width": -2,
+                "Text": "{title}",
+                "FontSize": 18
+              }
+            }
+          ]
+        },
+        {
+          "id": "Space2_{count}",
+          "type": "SpaceView",
+          "properties": { "HeightPercent": 2 }
+        },
+        {
+          "id": "des_{count}",
+          "type": "Label",
+          "properties": {
+            "FontTypefaceImport": "Product_Sans_Regular.ttf",
+            "Width": -1,
+            "Text": " • Last Upadated: {updated}\n • Platform: {platform}\n • Developer: {developer}\n • Total Downloads: {downloads}",
+            "FontSize": 15,
+            "TextColor": -16738680
+          }
+        },
+        {
+          "id": "Horizontal2_{count}",
+          "type": "HorizontalArrangement",
+          "properties": { "AlignHorizontal": 2, "Width": -2, "Height": -1 },
+          "components": [
+            {
+              "id": "button_{count}",
+              "type": "Button",
+              "properties": {
+                "Shape": 1,
+                "WidthPercent": 25,
+                "Height": -1,
+                "FontTypefaceImport": "Product_Sans_Bold.ttf",
+                "FontSize": 13,
+                "Text": "{buttonName}",
+                "BackgroundColor": -16738680
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

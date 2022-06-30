@@ -1,0 +1,150 @@
+.titulo {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  background-color: rgb(32, 32, 211); /**rgb(54, 54, 223);*/
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.subtitulo {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  background-color: rgb(223, 221, 221, 50%);
+  justify-content: flex-start;
+  color: rgb(32, 32, 211);
+  padding: 1em;
+}
+
+.subtitulo1 {
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgb(32, 32, 211, 90%);
+  /*background-color: rgb(223, 221, 221, 0%);*/
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+.lista {
+  margin-left: 10%;
+  margin-bottom: 2em;
+  margin-top: 1em;
+  width: 90%;
+  display: flex;
+  background-color: rgb(223, 221, 221, 30%);
+  color: gray; /**rgb(54, 54, 223);*/
+}
+
+
+a {
+  color: rgb(0, 0, 0, 60%);
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  border: 1px solid #ccc;
+}
+
+
+/*
+.nav {
+  grid-area: nav;
+}
+
+.content1 {
+  grid-area: content1;
+}
+
+.content2 {
+  grid-area: content2;
+}
+
+.content3 {
+  grid-area: content3;
+}
+
+.content4 {
+  grid-area: content4;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-area-2-colunas {
+  grid-template-areas:
+    "nav nav "
+    "content1 content2";
+}
+
+.grid-area-3-colunas {
+  grid-template-areas:
+    "nav nav nav"
+    "content1 content2 content3";
+}
+
+.grid-area-4-colunas {
+  grid-template-areas:
+    "nav nav nav nav"
+    "content1 content2 content3 content4";
+}
+
+/* Grid Item */
+
+.nav {
+  display: none;
+}
+
+.item {
+  text-align: center;
+  font-size: 1em;
+  }
+
+.item:hover {
+ transform: translateY(5px); 
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  border: 1px solid #ccc;
+  background-color: white;  
+  padding: 1em 2em 1em 2em;
+}
+
+body > div > img {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: auto;
+    margin: 30px auto 30px auto;
+    padding: 1em 0 1em 0; 
+     }
+
+  .lista {
+    margin: 0px auto;
+    padding: 0px;    
+    width: 100%;
+    background-color: rgb(223, 221, 221, 30%);
+    color: gray; /**rgb(54, 54, 223);*/
+  }
+}

@@ -1,0 +1,152 @@
+.titulo {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  background-color: rgb(32, 32, 211); /**rgb(54, 54, 223);*/
+  color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+.subtitulo {
+  height: 5em;
+  display: flex;
+  align-items: center;
+  background-color: rgb(223, 221, 221, 50%);
+  justify-content: flex-start;
+  color: rgb(32, 32, 211);
+  padding: 1em;
+}
+
+.subtitulo1 {
+  height: 4em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgb(32, 32, 211, 90%);
+  /*background-color: rgb(223, 221, 221, 0%);*/
+  margin-bottom: 1em;
+  padding-left: 2em;
+}
+
+.lista {
+  margin-left: 4em;
+  margin-bottom: 2em;
+  margin-top: 1em;
+  width: 100%;
+  display: flex;
+  background-color: rgb(223, 221, 221, 30%);
+  color: gray; /**rgb(54, 54, 223);*/
+}
+
+a {
+  color: rgb(0, 0, 0, 60%);
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  border: 1px solid #ccc;
+}
+.grid {
+  display: grid;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.content1 {
+  grid-area: content1;
+}
+
+.content2 {
+  grid-area: content2;
+}
+
+.content3 {
+  grid-area: content3;
+}
+
+.content4 {
+  grid-area: content4;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-area-2-colunas {
+  grid-template-areas:
+    "nav nav "
+    "content1 content2";
+}
+
+.grid-area-3-colunas {
+  grid-template-areas:
+    "nav nav nav"
+    "content1 content2 content3";
+}
+
+.grid-area-4-colunas {
+  grid-template-areas:
+    "nav nav nav nav"
+    "content1 content2 content3 content4";
+}
+
+/* Grid Item */
+.item {
+  margin: 5px;
+  text-align: center;
+  font-size: 1em;
+}
+
+.grid {
+  margin: 0 auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-right: 0.5em;
+  margin-left: 0, 5em;*/
+  border: 1px solid #ccc;
+  background-color: white;  
+  padding: 1em 2em 1em 2em;
+}
+
+body > div > img {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+  border: 1px solid #ccc;
+}
+
+@media (max-width: 630px) {
+  .grid-area-2-colunas {
+    grid-template-areas:
+      "nav"
+      "content1"
+      "content2";
+  }
+
+  .grid-area-3-colunas {
+    grid-template-areas:
+      "nav"
+      "content1"
+      "content2"
+      "content3";
+  }
+
+  .grid-area-4-colunas {
+    grid-template-areas:
+      "nav"
+      "content1"
+      "content2"
+      "content3"
+      "content4";
+  }
+
+  .lista {
+    margin: 0;
+  }
+}
