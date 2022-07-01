@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .titulo {
   height: 10em;
   display: flex;
@@ -33,12 +38,13 @@
   margin-left: 10%;
   margin-bottom: 2em;
   margin-top: 1em;
-  width: 90%;
+  /*width: 100%;*/
   display: flex;
   background-color: rgb(223, 221, 221, 30%);
   color: gray; /**rgb(54, 54, 223);*/
+  overflow: hidden;
+  padding-left: 30px;
 }
-
 
 a {
   color: rgb(0, 0, 0, 60%);
@@ -51,7 +57,6 @@ h1 {
 img {
   border: 1px solid #ccc;
 }
-
 
 /*
 .nav {
@@ -105,25 +110,25 @@ img {
 .item {
   text-align: center;
   font-size: 1em;
-  }
-
-.item:hover {
- transform: translateY(5px); 
 }
 
+.item:hover {
+  transform: translateY(5px);
+}
 
 .grid {
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  margin: 0 auto;
-  margin-top: 1em;
+  margin: 30px auto 30px auto;
+  /*margin-top: 1em;
   margin-bottom: 1em;
-  margin-right: 0.5em;
-  margin-left: 0.5em;
+  margin-right: auto;
+  margin-left: auto;*/
   border: 1px solid #ccc;
-  background-color: white;  
+  background-color: white;
   padding: 1em 2em 1em 2em;
+  width: 100%;
 }
 
 body > div > img {
@@ -134,17 +139,54 @@ body > div > img {
 }
 
 @media (max-width: 1000px) {
+  body {
+    margin: 0;
+    text-align: center;
+    width: 100vw;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-align: center;
+    margin: auto;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  ul {
+    margin-top: 30px;
+    list-style-type: none;
+  }
+
+  li {
+    text-align: center;
+    padding-inline-start: 0;
+  }
+
   .grid {
     grid-template-columns: auto;
     margin: 30px auto 30px auto;
-    padding: 1em 0 1em 0; 
-     }
+    padding: 1em 0 1em 0;
+    gap: 20px;
+  }
 
   .lista {
-    margin: 0px auto;
-    padding: 0px;    
-    width: 100%;
+    margin: 0 auto;
+    padding: 0;
     background-color: rgb(223, 221, 221, 30%);
     color: gray; /**rgb(54, 54, 223);*/
+    overflow: visible;
+    width: 90%;
   }
 }
